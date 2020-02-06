@@ -1,4 +1,4 @@
-const mongo = "39.101.130.31"
+const mongo = "mongodb://106.54.230.45:27017/exam"
 const mongoose = require("mongoose")
 const http = require("http")
 
@@ -8,7 +8,7 @@ const app = require("../app")
 
 let server = http.createServer(app)
 
-mongoose.connect("mongodb://39.101.130.31:27017/exam", function (err) {
+mongoose.connect(mongo, function (err) {
     console.log("mongo建立连接")
     if (!err) {
         server.listen(3000, function (err) {

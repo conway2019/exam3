@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-
+require("../model/index");
 let albumModel = mongoose.model("albums")
 
 function addAlbum(Album, callback) {

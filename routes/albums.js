@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var albumDao = require("../dao/AlbumDao")
+var albumDao = require("../dao/AlbumDao");
 
 router.get('/', function (req, res) {
     albumDao.findAllAlbums(function (albums) {

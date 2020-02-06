@@ -5,7 +5,7 @@ const assert = require("assert")
 
 describe("测试albumDAO", function () {
     before(function () {
-        mongoose.connect("mongodb://39.101.130.31:27017/exam", function (err) {
+        mongoose.connect("mongodb://106.54.230.45:27017/exam", function (err) {
             if (!err) console.log("连接到mongodb")
         })
     })
